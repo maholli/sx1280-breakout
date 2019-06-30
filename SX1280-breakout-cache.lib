@@ -1,0 +1,202 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x01
+#
+DEF Connector_Generic_Conn_01x01 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*
+$ENDFPLIST
+DRAW
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -50 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_C_Small
+#
+DEF Device_C_Small C 0 10 N N 1 F N
+F0 "C" 10 70 50 H V L CNN
+F1 "Device_C_Small" 10 -80 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ C_*
+$ENDFPLIST
+DRAW
+P 2 0 1 13 -60 -20 60 -20 N
+P 2 0 1 12 -60 20 60 20 N
+X ~ 1 0 100 80 D 50 50 1 1 P
+X ~ 2 0 -100 80 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_L_Small
+#
+DEF Device_L_Small L 0 10 N N 1 F N
+F0 "L" 30 40 50 H V L CNN
+F1 "Device_L_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Choke_*
+ *Coil*
+ Inductor_*
+ L_*
+$ENDFPLIST
+DRAW
+A 0 -60 20 -899 899 0 1 0 N 0 -80 0 -40
+A 0 -20 20 -899 899 0 1 0 N 0 -40 0 0
+A 0 20 20 -899 899 0 1 0 N 0 0 0 40
+A 0 60 20 -899 899 0 1 0 N 0 40 0 80
+X ~ 1 0 100 20 D 50 50 1 1 P
+X ~ 2 0 -100 20 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_US
+#
+DEF Device_R_US R 0 0 N Y 1 F N
+F0 "R" 100 0 50 V V C CNN
+F1 "Device_R_US" -100 0 50 V V C CNN
+F2 "" 40 -10 50 V I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+P 2 0 1 0 0 -90 0 -100 N
+P 2 0 1 0 0 90 0 100 N
+P 5 0 1 0 0 -30 40 -45 0 -60 -40 -75 0 -90 N
+P 5 0 1 0 0 30 40 15 0 0 -40 -15 0 -30 N
+P 5 0 1 0 0 90 40 75 0 60 -40 45 0 30 N
+X ~ 1 0 150 50 D 50 50 1 1 P
+X ~ 2 0 -150 50 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# dk_Oscillators_XLH536025_000000I
+#
+DEF dk_Oscillators_XLH536025_000000I Y 0 1 Y Y 1 F N
+F0 "Y" -110 140 60 H V L CNN
+F1 "dk_Oscillators_XLH536025_000000I" 20 -350 60 H V L CNN
+F2 "digikey-footprints:Oscillator_XLH536025.000000I" 200 200 60 H I L CNN
+F3 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" 200 300 60 H I L CNN
+F4 "631-1156-1-ND" 200 400 60 H I L CNN "Digi-Key_PN"
+F5 "XLH536025.000000I" 200 500 60 H I L CNN "MPN"
+F6 "Crystals, Oscillators, Resonators" 200 600 60 H I L CNN "Category"
+F7 "Oscillators" 200 700 60 H I L CNN "Family"
+F8 "https://www.idt.com/document/dst/xl-family-low-phase-noise-quartz-based-pll-oscillators-datasheet" 200 800 60 H I L CNN "DK_Datasheet_Link"
+F9 "/product-detail/en/idt-integrated-device-technology-inc/XLH536025.000000I/631-1156-1-ND/2074684" 200 900 60 H I L CNN "DK_Detail_Page"
+F10 "XTAL OSC XO 25.0000MHZ HCMOS SMD" 200 1000 60 H I L CNN "Description"
+F11 "IDT, Integrated Device Technology Inc" 200 1100 60 H I L CNN "Manufacturer"
+F12 "Active" 200 1200 60 H I L CNN "Status"
+DRAW
+S 200 100 -100 -300 0 1 0 f
+X E/D 1 -200 -100 100 R 50 50 1 1 I
+X GND 2 0 -400 100 U 50 50 1 1 W
+X OUT 3 300 -100 100 L 50 50 1 1 O
+X VDD 4 100 200 100 D 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+3V3
+#
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+ALIAS +3.3V
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# symbols_2450FM07D0034T
+#
+DEF symbols_2450FM07D0034T FL 0 30 Y Y 1 F N
+F0 "FL" 1050 300 50 H V L CNN
+F1 "symbols_2450FM07D0034T" 1050 200 50 H V L CNN
+F2 "2450FM07D0034T" 1050 100 50 H I L CNN
+F3 "https://www.mouser.co.uk/datasheet/2/611/2450FM07D0034-1375634.pdf" 1050 0 50 H I L CNN
+F4 "Signal Conditioning Mini 2.45GHz Imped Matchd Frnt-End Fltr" 1050 -100 50 H I L CNN "Description"
+F5 "0.4" 1050 -200 50 H I L CNN "Height"
+F6 "JOHANSON TECHNOLOGY" 1050 -300 50 H I L CNN "Manufacturer_Name"
+F7 "2450FM07D0034T" 1050 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "609-2450FM07D0034T" 1050 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=609-2450FM07D0034T" 1050 -600 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 100 1000 100 1000 -200 200 -200 200 100 N
+X IN 1 0 0 200 R 50 50 0 0 B
+X GND_1 2 0 -100 200 R 50 50 0 0 B
+X OUT 3 1200 0 200 L 50 50 0 0 B
+X GND_2 4 1200 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# symbols_SX1280IMLTRT
+#
+DEF symbols_SX1280IMLTRT IC 0 30 Y Y 1 F N
+F0 "IC" 1450 1000 50 H V L CNN
+F1 "symbols_SX1280IMLTRT" 1450 900 50 H V L CNN
+F2 "QFN50P400X400X80-25N-D" 1450 800 50 H I L CNN
+F3 "http://www.semtech.com/images/datasheet/sx1280_81.pdf" 1450 700 50 H I L CNN
+F4 "RF Transceiver Long range 2.4 GHz Wireless Transceiver" 1450 600 50 H I L CNN "Description"
+F5 "0.8" 1450 500 50 H I L CNN "Height"
+F6 "SEMTECH" 1450 400 50 H I L CNN "Manufacturer_Name"
+F7 "SX1280IMLTRT" 1450 300 50 H I L CNN "Manufacturer_Part_Number"
+F8 "947-SX1280IMLTRT" 1450 200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=947-SX1280IMLTRT" 1450 100 50 H I L CNN "Mouser Price/Stock"
+DRAW
+P 5 0 1 6 200 800 1400 800 1400 -1100 200 -1100 200 800 N
+X VR_PA 1 0 0 200 R 50 50 0 0 B
+X DIO3 10 800 -1300 200 U 50 50 0 0 B
+X VBAT_IO 11 900 -1300 200 U 50 50 0 0 B
+X DCC_FB 12 1000 -1300 200 U 50 50 0 0 B
+X GND 13 1600 -500 200 L 50 50 0 0 B
+X DCC_SW 14 1600 -400 200 L 50 50 0 0 B
+X VBAT 15 1600 -300 200 L 50 50 0 0 B
+X MISO_TX 16 1600 -200 200 L 50 50 0 0 B
+X MOSI_RX 17 1600 -100 200 L 50 50 0 0 B
+X SCK_RTSN 18 1600 0 200 L 50 50 0 0 B
+X NSS_CTS 19 1600 100 200 L 50 50 0 0 B
+X VBAT_IN 2 0 -100 200 R 50 50 0 0 B
+X GND 20 850 1000 200 D 50 50 0 0 W N
+X GND 21 850 1000 200 D 50 50 0 0 W N
+X RFIO 22 1600 300 200 L 50 50 0 0 B
+X GND 23 850 1000 200 D 50 50 0 0 W N
+X GND 24 850 1000 200 D 50 50 0 0 W N
+X GND 25 850 1000 200 D 50 50 0 0 W
+X NRESET 3 0 -200 200 R 50 50 0 0 B
+X XTA 4 0 -300 200 R 50 50 0 0 B
+X GND_1 5 0 -400 200 R 50 50 0 0 B
+X XTB 6 0 -500 200 R 50 50 0 0 B
+X BUSY 7 500 -1300 200 U 50 50 0 0 B
+X DIO1 8 600 -1300 200 U 50 50 0 0 B
+X DIO2 9 700 -1300 200 U 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+#End Library
