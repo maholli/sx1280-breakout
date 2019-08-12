@@ -5,11 +5,11 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Sprite-2019"
+Title "SX1280 Breakout"
 Date ""
-Rev "v3a"
+Rev "v1b"
 Comp "RExLab Stanford University"
-Comment1 "Z.Manchester"
+Comment1 ""
 Comment2 "M.Holliday"
 Comment3 ""
 Comment4 ""
@@ -86,13 +86,13 @@ Wire Wire Line
 Wire Wire Line
 	5300 5650 6250 5650
 Connection ~ 6250 5650
-Text Label 5850 5650 0    50   ~ 6
+Text Label 5850 5650 0    50   ~ 10
 V_DCC
 Wire Wire Line
 	6250 4850 6250 4750
 Wire Wire Line
 	6250 4750 5900 4750
-Text Label 5950 4750 0    50   ~ 6
+Text Label 5950 4750 0    50   ~ 10
 V_DCC2
 Wire Wire Line
 	5900 4650 6550 4650
@@ -105,19 +105,19 @@ Wire Wire Line
 	6550 5050 6550 5150
 Wire Wire Line
 	5100 5650 5100 5700
-Text GLabel 5100 5700 3    50   BiDi ~ 6
+Text GLabel 5100 5700 3    50   BiDi ~ 10
 SX_DIO3
 Wire Wire Line
 	5000 5650 5000 5700
-Text GLabel 5000 5700 3    50   BiDi ~ 6
+Text GLabel 5000 5700 3    50   BiDi ~ 10
 SX_DIO2
 Wire Wire Line
 	4900 5650 4900 5700
-Text GLabel 4900 5700 3    50   BiDi ~ 6
+Text GLabel 4900 5700 3    50   BiDi ~ 10
 SX_DIO1
 Wire Wire Line
 	4800 5650 4800 5700
-Text GLabel 4800 5700 3    50   Output ~ 6
+Text GLabel 4800 5700 3    50   Output ~ 10
 SX_BUSY
 $Comp
 L Device:C_Small C5
@@ -143,15 +143,15 @@ F 3 "" H 3050 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4350 6300 4350
-Text GLabel 6300 4350 2    50   Input ~ 6
+Text GLabel 6300 4350 2    50   Input ~ 10
 SCK
 Wire Wire Line
 	6200 4450 6300 4450
-Text GLabel 6300 4450 2    50   Input ~ 6
+Text GLabel 6300 4450 2    50   Input ~ 10
 MOSI
 Wire Wire Line
 	6200 4550 6300 4550
-Text GLabel 6300 4550 2    50   Input ~ 6
+Text GLabel 6300 4550 2    50   Input ~ 10
 MISO
 $Comp
 L Device:R_US R2
@@ -166,7 +166,7 @@ F 3 "~" H 6050 4250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 4250 6300 4250
-Text GLabel 6300 4250 2    50   Input ~ 6
+Text GLabel 6300 4250 2    50   Input ~ 10
 SX_CS
 Wire Wire Line
 	6800 4650 6550 4650
@@ -259,22 +259,22 @@ F 3 "" H 5300 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 7650 7200 0    157  ~ 31
-Sprite LoRa 2.4 GHz
-Text GLabel 4250 1650 0    59   Output ~ 6
+SX1280 Breakout
+Text GLabel 4250 1650 0    59   Output ~ 12
 SCK
 Wire Wire Line
 	4250 1650 4350 1650
-Text GLabel 4250 1450 0    59   Input ~ 6
+Text GLabel 4250 1450 0    59   Input ~ 12
 MISO
 Wire Wire Line
 	4250 1450 4350 1450
 Wire Wire Line
 	4350 1850 4250 1850
-Text GLabel 4250 1750 0    50   Input ~ 6
+Text GLabel 4250 1750 0    50   Input ~ 10
 SX_CS
-Text GLabel 4250 1850 0    50   BiDi ~ 6
+Text GLabel 4250 1850 0    50   BiDi ~ 10
 SX_RST
-Text Label 4100 4400 1    50   ~ 6
+Text Label 4100 4400 1    50   ~ 10
 V_DCC
 $Comp
 L power:GND #PWR03
@@ -321,18 +321,16 @@ Wire Wire Line
 	3400 4650 3250 4650
 Wire Wire Line
 	3600 4650 4300 4650
-Wire Wire Line
-	3050 4100 3050 4000
 $Comp
 L Device:C_Small C1
 U 1 1 5D611E57
-P 3050 4200
-F 0 "C1" H 3142 4246 50  0000 L CNN
-F 1 "100nF" H 3142 4155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3050 4200 50  0001 C CNN
-F 3 "~" H 3050 4200 50  0001 C CNN
-	1    3050 4200
-	1    0    0    -1  
+P 2750 4350
+F 0 "C1" H 2842 4396 50  0000 L CNN
+F 1 "100nF" H 2842 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2750 4350 50  0001 C CNN
+F 3 "~" H 2750 4350 50  0001 C CNN
+	1    2750 4350
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:C_Small C2
@@ -345,7 +343,7 @@ F 3 "~" H 3500 4650 50  0001 C CNN
 	1    3500 4650
 	0    1    1    0   
 $EndComp
-Text GLabel 3900 4550 0    50   BiDi ~ 6
+Text GLabel 3900 4550 0    50   BiDi ~ 10
 SX_RST
 NoConn ~ 4300 4850
 Wire Wire Line
@@ -412,13 +410,11 @@ F 3 "~" H 4200 4200 50  0001 C CNN
 	1    4200 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3050 4350 3050 4300
 $Comp
 L dk_Oscillators:XLH536025_000000I X1
 U 1 1 5D18C449
 P 2950 4550
-F 0 "X1" H 2950 4750 60  0000 R CNN
+F 0 "X1" H 3300 4750 60  0000 R CNN
 F 1 "52.000 MHz" H 3294 4397 60  0001 L CNN
 F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 3150 4750 60  0001 L CNN
 F 3 "http://www.foxonline.com/pdfs/FXO_HC53.pdf" H 3150 4850 60  0001 L CNN
@@ -665,17 +661,17 @@ F 3 "" H 5900 1950 50  0001 C CNN
 	1    5900 1950
 	0    -1   -1   0   
 $EndComp
-Text GLabel 4250 1550 0    59   Output ~ 6
+Text GLabel 4250 1550 0    59   Output ~ 12
 MOSI
 Wire Wire Line
 	4250 1550 4350 1550
-Text GLabel 6000 1850 2    50   BiDi ~ 6
+Text GLabel 6000 1850 2    50   BiDi ~ 10
 SX_DIO3
-Text GLabel 6000 1350 2    50   BiDi ~ 6
+Text GLabel 6000 1350 2    50   BiDi ~ 10
 SX_DIO2
-Text GLabel 6000 1450 2    50   BiDi ~ 6
+Text GLabel 6000 1450 2    50   BiDi ~ 10
 SX_DIO1
-Text GLabel 6000 1750 2    50   Input ~ 6
+Text GLabel 6000 1750 2    50   Input ~ 10
 SX_BUSY
 Wire Wire Line
 	6000 1750 5900 1750
@@ -685,7 +681,7 @@ Wire Wire Line
 	6000 1450 5900 1450
 Wire Wire Line
 	6000 1850 5900 1850
-Text GLabel 6000 1550 2    50   BiDi ~ 6
+Text GLabel 6000 1550 2    50   BiDi ~ 10
 SX_DIO0
 Wire Wire Line
 	6000 1550 5900 1550
@@ -704,7 +700,7 @@ Wire Wire Line
 	8000 2050 8000 4050
 Wire Wire Line
 	5900 2050 8000 2050
-Text Notes 4550 950  0    118  ~ 6
+Text Notes 4550 950  0    118  ~ 24
 Castellations\n
 Wire Wire Line
 	5900 4050 6800 4050
@@ -719,11 +715,11 @@ F 3 "" H 8000 4150 50  0001 C CNN
 	1    8000 4150
 	1    0    0    -1  
 $EndComp
-Text Notes 8050 2400 0    79   ~ 6
+Text Notes 8050 2400 0    79   ~ 16
 50ohm\n0.6mm 2-layer FR4\n2.4 GHz
-Text Notes 6300 6700 0    118  ~ 6
+Text Notes 6300 6700 0    118  ~ 24
 https://github.com/maholli/sx1280-breakout\n
-Text Notes 4100 1100 0    59   ~ 6
+Text Notes 4100 1100 0    59   ~ 12
 (Footprint compatible with RFM9x breakouts)
 Text Notes 4850 3200 0    118  ~ 0
 Radio\n
@@ -731,4 +727,14 @@ Text Notes 7200 3700 0    118  ~ 0
 Filter\n
 Text Notes 2200 4700 0    118  ~ 0
 TCXO\n
+Wire Wire Line
+	2750 4450 2750 4650
+Connection ~ 2750 4650
+Wire Wire Line
+	3050 4000 3050 4250
+Wire Wire Line
+	2750 4250 3050 4250
+Connection ~ 3050 4250
+Wire Wire Line
+	3050 4250 3050 4350
 $EndSCHEMATC
