@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:SX1280-breakout-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -133,12 +132,12 @@ $EndComp
 $Comp
 L power:+3V3 #PWR04
 U 1 1 5D5FEABF
-P 3050 4150
-F 0 "#PWR04" H 3050 4000 50  0001 C CNN
-F 1 "+3V3" H 3065 4323 50  0000 C CNN
-F 2 "" H 3050 4150 50  0001 C CNN
-F 3 "" H 3050 4150 50  0001 C CNN
-	1    3050 4150
+P 3050 4000
+F 0 "#PWR04" H 3050 3850 50  0001 C CNN
+F 1 "+3V3" H 3065 4173 50  0000 C CNN
+F 2 "" H 3050 4000 50  0001 C CNN
+F 3 "" H 3050 4000 50  0001 C CNN
+	1    3050 4000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -375,7 +374,7 @@ U 1 1 5D1A4051
 P 4300 4350
 F 0 "U1" H 5050 3800 50  0000 L CNN
 F 1 "SX1280IMLTRT" H 4850 3700 50  0000 L CNN
-F 2 "QFN50P400X400X80-25N-D" H 5750 5150 50  0001 L CNN
+F 2 "custom-footprints:QFN50P400X400X80-25N-D" H 5750 5150 50  0001 L CNN
 F 3 "" H 5750 5050 50  0001 L CNN
 F 4 "RF Transceiver Long range 2.4 GHz Wireless Transceiver" H 5750 4950 50  0001 L CNN "Description"
 F 5 "0.8" H 5750 4850 50  0001 L CNN "Height"
@@ -411,10 +410,10 @@ F 3 "~" H 4200 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L dk_Oscillators:XLH536025_000000I X1
+L SX1280-breakout-rescue:XLH536025_000000I-dk_Oscillators X1
 U 1 1 5D18C449
 P 2950 4550
-F 0 "X1" H 3250 4800 60  0000 R CNN
+F 0 "X1" H 3200 4800 60  0000 R CNN
 F 1 "52.000 MHz" H 3294 4397 60  0001 L CNN
 F 2 "Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm" H 3150 4750 60  0001 L CNN
 F 3 "http://www.foxonline.com/pdfs/FXO_HC53.pdf" H 3150 4850 60  0001 L CNN
@@ -439,7 +438,7 @@ U 1 1 5D18DEA9
 P 6800 4050
 F 0 "U2" H 7450 4300 50  0000 R CNN
 F 1 "2450FM07D0034T" H 7750 4200 50  0000 R CNN
-F 2 "2450FM07D0034T" H 7850 4150 50  0001 L CNN
+F 2 "custom-footprints:2450FM07D0034T" H 7850 4150 50  0001 L CNN
 F 3 "" H 7850 4050 50  0001 L CNN
 F 4 "Signal Conditioning Mini 2.45GHz Imped Matchd Frnt-End Fltr" H 7850 3950 50  0001 L CNN "Description"
 F 5 "0.4" H 7850 3850 50  0001 L CNN "Height"
@@ -594,17 +593,6 @@ F 3 "~" H 4550 1750 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J9
-U 1 1 5D1A4AE7
-P 5700 2050
-F 0 "J9" H 5850 2050 50  0000 C CNN
-F 1 "Conn_01x01" H 5618 1916 50  0001 C CNN
-F 2 "custom-footprints:castellated" H 5700 2050 50  0001 C CNN
-F 3 "~" H 5700 2050 50  0001 C CNN
-	1    5700 2050
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J8
 U 1 1 5D1A4AED
 P 4550 2050
@@ -681,10 +669,6 @@ Wire Wire Line
 	6000 1450 5900 1450
 Wire Wire Line
 	6000 1850 5900 1850
-Text GLabel 6000 1550 2    50   BiDi ~ 10
-SX_DIO0
-Wire Wire Line
-	6000 1550 5900 1550
 $Comp
 L power:+3V3 #PWR0106
 U 1 1 5D22DCED
@@ -696,8 +680,6 @@ F 3 "" H 5900 1650 50  0001 C CNN
 	1    5900 1650
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8000 2050 8000 4050
 Wire Wire Line
 	5900 2050 8000 2050
 Text Notes 4550 950  0    118  ~ 24
@@ -725,16 +707,57 @@ Text Notes 4850 3200 0    118  ~ 0
 Radio\n
 Text Notes 7200 3700 0    118  ~ 0
 Filter\n
-Text Notes 2750 3850 0    118  ~ 0
+Text Notes 2200 4700 0    118  ~ 0
 TCXO\n
 Wire Wire Line
 	2750 4450 2750 4650
 Connection ~ 2750 4650
 Wire Wire Line
-	3050 4150 3050 4250
+	3050 4000 3050 4250
 Wire Wire Line
 	2750 4250 3050 4250
 Connection ~ 3050 4250
 Wire Wire Line
 	3050 4250 3050 4350
+NoConn ~ 5900 1550
+$Comp
+L Connector_Generic:Conn_01x01 J9
+U 1 1 5D1A4AE7
+P 5700 2050
+F 0 "J9" H 5850 2050 50  0000 C CNN
+F 1 "Conn_01x01" H 5618 1916 50  0001 C CNN
+F 2 "custom-footprints:castellated" H 5700 2050 50  0001 C CNN
+F 3 "~" H 5700 2050 50  0001 C CNN
+	1    5700 2050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:Antenna AE1
+U 1 1 607B5822
+P 8400 2950
+F 0 "AE1" H 8480 2939 50  0000 L CNN
+F 1 "Antenna" H 8480 2848 50  0000 L CNN
+F 2 "custom-footprints:U.FL-R-SMT-1" H 8400 2950 50  0001 C CNN
+F 3 "~" H 8400 2950 50  0001 C CNN
+	1    8400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R6
+U 1 1 607B6B66
+P 8000 3000
+F 0 "R6" H 7932 2954 50  0000 R CNN
+F 1 "0" H 7932 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8040 2990 50  0001 C CNN
+F 3 "~" H 8000 3000 50  0001 C CNN
+	1    8000 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8000 2850 8000 2050
+Wire Wire Line
+	8000 3150 8000 4050
+Wire Wire Line
+	8000 3150 8400 3150
+Connection ~ 8000 3150
 $EndSCHEMATC
