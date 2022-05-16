@@ -1,4 +1,4 @@
-20544635986671730
+20542983264693090
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86660,13 +86660,6 @@ SMD SMT crystal
 4
 4
 custom-footprints
-Tab
-A symbol representing annotation for tab placement
-
-0
-0
-0
-custom-footprints
 U.FL-R-SMT-1
 U.FL-R-SMT-1
 Connector
@@ -86874,7 +86867,7 @@ castellated_04mm
 
 
 0
-4
+3
 1
 custom-footprints
 castellated_05mm
