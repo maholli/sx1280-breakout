@@ -1,4 +1,4 @@
-20544635986671730
+20553035375932830
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -85722,6 +85722,13 @@ ADS124208_withpad
 33
 33
 custom-footprints
+AP.25F
+
+
+0
+0
+0
+custom-footprints
 BARREL_JACK
 DC Barrel Jack
 Power Jack
@@ -85746,13 +85753,6 @@ custom-footprints
 BSS84AKV_115
 6 leads
 Integrated Circuit
-0
-6
-6
-custom-footprints
-BSS138DWQ-7
-SOT36325
-MOSFET (N-Channel)
 0
 6
 6
@@ -86303,6 +86303,13 @@ QFN-16-PAD
 17
 17
 custom-footprints
+QFN32-5X5MM
+<h3>32-pin QFN 5.0 x 5.0 mm, 0.5mm pitch</h3>{return}<p>Used by ESP8266</p>{return}<p><a href="http://espressif.com/sites/default/files/documentation/0a-esp8266_datasheet_en_v4.4.pdf">Datasheet</a></p>
+
+0
+33
+33
+custom-footprints
 QFN50P350X350X100-21N-D
 BQ25570RGRR-1
 Integrated Circuit
@@ -86492,6 +86499,20 @@ SOT-23-6
 6
 6
 custom-footprints
+SOT-23-6_RADFET-VT01
+
+
+0
+6
+6
+custom-footprints
+SOT-363
+BSS138DWQ-7
+MOSFET (N-Channel) 2NMOS
+0
+6
+6
+custom-footprints
 SOT-523F
 MMBT2222AT
 
@@ -86576,6 +86597,13 @@ SXP.18.4.A.02
 1
 1
 custom-footprints
+SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm
+SMD Solder Jumper, 1x1.5mm, rounded Pads, 0.3mm gap, bridged with 1 copper strip
+net tie solder jumper bridged
+0
+2
+2
+custom-footprints
 SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm
 SMD Solder 3-pad Jumper, 1x1.5mm rounded Pads, 0.3mm gap, pads 1-2 bridged with 1 copper strip
 solder jumper open
@@ -86612,6 +86640,13 @@ TAPE_ANT_0.25
 2
 custom-footprints
 TAPE_ANT_VR3X
+
+
+0
+2
+2
+custom-footprints
+TAPE_ANT_VR3X-2
 
 
 0

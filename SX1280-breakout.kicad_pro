@@ -391,8 +391,8 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
-      "vrml": ""
+      "step": "SX1280-breakout.step",
+      "vrml": "SX1280-breakout.wrl"
     },
     "page_layout_descr_file": ""
   },
